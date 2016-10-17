@@ -1,0 +1,28 @@
+<div>
+  <label for="hostnameInput">Hostname and port: </label>
+  <input id="hostnameInput" #hostnameInput value="{{hostname}}" size="75">
+</div>
+<hr/>
+<div>
+  <h2>EIRCODE</h2>
+  <input #eircodeInput value="{{eircode}}">
+  <button (click)="getAddressByEircode(hostnameInput.value, eircodeInput.value)">Get Address By Eircode</button>
+  <div>
+    <h3>Result</h3>
+    <pre>
+        {{dataEircode | json}}
+    </pre>
+  </div>
+</div>
+<hr/>
+<div>
+  <h2>UKCODE</h2>
+  <input #ukcodeInput value="{{ukcode}}">
+  <button (click)="getAddressByUkcode(hostnameInput.value, ukcodeInput.value)">Get Address By Ukcode</button>
+  <div>
+    <h3>Result</h3>
+    <pre>
+        {{dataUkcode | json}}
+    </pre>
+  </div>
+</div>

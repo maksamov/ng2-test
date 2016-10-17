@@ -5,10 +5,12 @@ import { HttpModule } from '@angular/http';
 import { CodeapiService } from './codeapi.service';
 
 import { AppComponent } from './app.component';
+import { ShowDataComponent } from './show-data/show-data.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShowDataComponent
   ],
   imports: [
     BrowserModule,
