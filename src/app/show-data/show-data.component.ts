@@ -20,7 +20,7 @@ export class ShowDataComponent implements OnInit {
   ngOnInit() {
     this.eircode = '1234';
     this.ukcode = 'NR147PZ';
-    this.hostname = 'localhost:8080';
+    this.hostname = 'keeper-test-6771ec55-1.5b2bcc09.cont.dockerapp.io:8080';
   }
 
 
